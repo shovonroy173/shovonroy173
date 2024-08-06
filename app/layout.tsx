@@ -7,8 +7,14 @@ import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
-  description: "Personal Porrtfolio",
+  title: "Shovon Roy Shuvro",
+  description: "Shovon Roy Shuvro - Full Stack Web Developer",
+  icons: {
+    icon: ['/favicon.ico?v=4'],
+    apple: ['/apple-touch-icon.png?v=4'],
+    shortcut: ['/apple-touch-icon.png'],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -18,12 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-        <StarsCanvas/>
-        <Navbar/>
+      <body
+        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+      >
+        <StarsCanvas />
+        <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
