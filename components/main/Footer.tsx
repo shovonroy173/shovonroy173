@@ -1,4 +1,3 @@
-
 import React from "react";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
@@ -17,18 +16,16 @@ const Footer = () => {
               className="text-[15px] flex flex-row items-center my-[15px] gap-2 cursor-pointer"
             >
               <RxLinkedinLogo />
-              <span>Linkedin</span> 
+              <span>Linkedin</span>
             </Link>
-            
-              
-              <Link
-                href="https://shovonworkspacegroup.slack.com"
-                className="text-[15px]  flex flex-row items-center my-[15px] gap-2 cursor-pointer"
-              >
-                <FaSlack />
-                <span>Slack</span> 
-              </Link>
-            
+
+            <Link
+              href="https://shovonworkspacegroup.slack.com"
+              className="text-[15px]  flex flex-row items-center my-[15px] gap-2 cursor-pointer"
+            >
+              <FaSlack />
+              <span>Slack</span>
+            </Link>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">All Projects</div>
