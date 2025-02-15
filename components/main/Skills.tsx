@@ -31,10 +31,10 @@ const Skills = () => {
 
       <motion.div
           variants={slideInFromRight(0.5)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
-          <h1 className="text-white text-[20px]">
+          <h1 className="text-white text-lg">
             Next.js Specialization
           </h1>
         </motion.div>
@@ -52,7 +52,7 @@ const Skills = () => {
       </div>
       <motion.div
           variants={slideInFromLeft(0.6)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
           <h1 className="text-white text-[20px]">
@@ -72,7 +72,7 @@ const Skills = () => {
       </div>
       <motion.div
           variants={slideInFromRight(0.7)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
           <h1 className="text-white text-[20px]">
@@ -93,7 +93,7 @@ const Skills = () => {
       </div>
       <motion.div
           variants={slideInFromLeft(0.8)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
           <h1 className="text-white text-[20px]">
@@ -114,7 +114,7 @@ const Skills = () => {
 
       <motion.div
           variants={slideInFromRight(0.8)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
           <h1 className="text-white text-[20px]">
@@ -134,7 +134,7 @@ const Skills = () => {
       </div>
       <motion.div
           variants={slideInFromLeft(1)}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[.9]"
+          className="Welcome-box py-2 px-6 border border-[#7042f88b] opacity-[.9]"
         >
           <SparklesIcon className="text-white mr-[10px] h-5 w-5" />
           <h1 className="text-white text-[20px]">

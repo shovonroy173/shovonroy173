@@ -83,7 +83,7 @@ export const Skill_data = [
   export const Socials = [
     {
       name: "Github",
-      src: "/github.png",
+      src: "/github.jpeg",
       link:"https://github.com/shovonroy173"
     },
     {
@@ -384,6 +384,39 @@ export const Skill_data = [
       backend:"https://github.com/shovonroy173/jobs-media-api"
     },
 
+  ]
+
+  export const experiences = [
+    {
+      id:1, 
+      img:"/opensource.png",
+      title:"Open Source Contributor",
+      company:"Project Mate",
+      task:`I added unique categories extract from each product.`,
+      description: `Project Mate is a web application that helps users manage their
+              projects and collaborate with team members.`,
+      url:'https://projectmate.rohitdasu.dev/',
+    },
+    {
+      id:2,
+      img:"/acl.jpg",
+      title:"Full Stack Developer, Intern",
+      company:"Alpha Code Labs, Gurgaon, India",
+      task: `I worked on the dashboard of a project.`,
+      description: `Alpha Code Labs is a software development company that provides
+      end-to-end solutions to its clients.`,
+      url:'https://alphacodelabs.com/',
+    },
+    {
+      id:3,
+      img:"/janos.jpg",
+      title:"Intern",
+      company:"Janos Sofsys Engineering Limited, Mirpur, Bangladesh",
+      task: `I worked on several projects.`,
+      description: `Janos Sofsys Engineering Limited is a software development company
+      that provides end-to-end solutions to its clients.`,
+    url:'https://janos.com.bd/'
+    }
   ]
   
   

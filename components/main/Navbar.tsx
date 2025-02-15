@@ -17,14 +17,14 @@ import { TfiAlignRight } from "react-icons/tfi";
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+      <div className="w-full h-full flex flex-row items-center justify-between mx-auto ">
         <Link href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/NavLogo.png"
             alt="logo"
             width={70}
             height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer hover:animate-slowspin "
           />
 
           <span className="font-bold ml-[10px]  text-gray-300">
@@ -32,18 +32,18 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <div className="w-[500px] h-full hidden lg:flex flex-row items-center justify-between    ">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <Link href="/about-me" >
+        <div className=" hidden lg:flex flex-row items-center justify-between    ">
+          <div className="flex items-center gap-10 justify-between w-full   text-gray-200">
+            <Link href="/about-me" className="cursor-pointer hover:text-white hover:scale-110 hover:font-semibold transition-all ease-in-out duration-300">
               About me
             </Link>
-            <a href="#skills" className="cursor-pointer">
+            <a href="#skills" className="cursor-pointer hover:scale-110 hover:font-semibold  transition-all ease-in-out duration-300">
               Skills
             </a>
-            <a href="#experience" className="cursor-pointer">
+            <a href="#experience" className="cursor-pointer hover:text-white hover:scale-110 hover:font-semibold transition-all ease-in-out duration-300">
               Real-World-Experiences
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="#projects" className="cursor-pointer hover:text-white hover:scale-110 hover:font-semibold transition-all ease-in-out duration-300">
               Projects
             </a>
           </div>
@@ -57,6 +57,7 @@ const Navbar = () => {
                 alt={social.name}
                 width={30}
                 height={30}
+                className="rounded-full"
               />
             </Link>
           ))}
