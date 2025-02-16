@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 
-
 import { Projects_List } from "@/constants/index";
 import Link from "next/link";
 
@@ -46,15 +45,17 @@ const responsive = {
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-20 "
+      className="flex flex-col items-center justify-center p-16 "
       id="projects"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className=" w-full flex  md:flex-row gap-10 px-10">
-        <Carousel 
-        plugins={[Autoplay({ delay: 2000 })]}
+        <Carousel
+          opts={{
+            align: "center",
+          }}
+          className="max-w-7xl z-20  flex justify-center"
         >
           <CarouselContent>
             {Projects_List?.map((item) => (
@@ -67,7 +68,7 @@ const Projects = () => {
                   img={item.project_image}
                   live_link={item.live_link}
                   frontend={item.frontend}
-                  backend={item?.backend}
+                  // backend={item.backend}
                 />
               </CarouselItem>
             ))}
@@ -78,7 +79,6 @@ const Projects = () => {
 
       </div>
 
-    </div>
   );
 };
 

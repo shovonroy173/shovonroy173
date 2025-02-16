@@ -29,37 +29,29 @@ const Encryption = () => {
             key={item.id}
             className="bg-[#030014]/90 w-[350px]    rounded-xl text-white shadow-lg shadow-[#2A0E61]/50 hover:shadow-[#2A0E61]/90 flex flex-col items-center justify-center gap-5 p-5 group hover:scale-105 transition-all ease-in-out duration-300"
           >
-            <Image
-              src={item?.img}
-              width={300}
-              height={100}
-              alt={item.company}
-              className="rounded-lg object-cover"
-            />
+            <div className="w-full h-[200px]">
+              <Image
+                src={item?.img}
+                width={300}
+                height={100}
+                alt={item.company}
+                className="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+
             <div className="flex flex-col gap-2">
-            <p>
-                Position:{" "}
-                <span className="text-gray-400">
-                 {item.title}
-                </span>
-              </p>
-              <p >
-                Company:{" "}
-                <span className="text-gray-400">
-                  {item.company}
-                  </span>
+              <p>
+                Position: <span className="text-gray-400">{item.title}</span>
               </p>
               <p>
-                Task:{" "}
-                <span className="text-gray-400">
-                 {item.task}
-                </span>
+                Company: <span className="text-gray-400">{item.company}</span>
+              </p>
+              <p>
+                Task: <span className="text-gray-400">{item.task}</span>
               </p>
               <p>
                 Description:{" "}
-                <span className="text-gray-400">
-                  {item.description}
-                </span>
+                <span className="text-gray-400">{item.description}</span>
               </p>
               <p className="opacity-0 h-0 group-hover:opacity-100 group-hover:h-10 transition-all ease-in-out duration-300">
                 Company Url:{" "}
@@ -70,8 +62,6 @@ const Encryption = () => {
             </div>
           </div>
         ))}
-
-
       </div>
 
       <div className="w-full flex items-start justify-center absolute">

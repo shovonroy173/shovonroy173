@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const page = () => {
   return (
-    <div className="mt-20 text-white">
+    <div className="m-20 text-white">
       <div className="flex flex-col lg:flex-row items-center place-content-center  gap-10">
         <div className="flex flex-col gap-y-5">
           <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-4xl font-semibold">
