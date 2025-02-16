@@ -9,38 +9,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import Autoplay from "embla-carousel-autoplay";
 
 import { Projects_List } from "@/constants/index";
-import Link from "next/link";
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
 
 const Projects = () => {
   return (
@@ -52,9 +24,7 @@ const Projects = () => {
         My Projects
       </h1>
         <Carousel
-          opts={{
-            align: "center",
-          }}
+          plugins={[Autoplay()]}
           className="max-w-7xl z-20  flex justify-center"
         >
           <CarouselContent>
